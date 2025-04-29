@@ -1,0 +1,28 @@
+## Build results
+bin/
+obj/
+out/
+
+## VS files
+.vs/
+*.user
+*.suo
+
+## Rider files
+.idea/
+
+## ASP.NET specific
+appsettings.Development.json
+
+## Node modules (if using npm)
+node_modules/
+
+## Publish folder
+wwwroot/dist/
+
+## Logs
+*.log
+
+## Other
+*.db
+*.sqlite
