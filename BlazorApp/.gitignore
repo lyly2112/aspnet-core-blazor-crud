@@ -26,3 +26,5 @@ wwwroot/dist/
 ## Other
 *.db
 *.sqlite
+
+*.DS_Store
