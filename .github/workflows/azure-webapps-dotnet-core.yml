@@ -53,16 +53,16 @@ jobs:
                       ${{ runner.os }}-nuget-
 
             - name: Build with dotnet
-              run: dotnet build --configuration Release
+              run: dotnet build BlazorApp/BlazorApp/BlazorApp.csproj --configuration Release
 
             - name: dotnet publish
-              run: dotnet publish -c Release -o myapp
+              run: dotnet publish BlazorApp/BlazorApp/BlazorApp.csproj -c Release -o myapp
 
             - name: Upload artifact for deployment job
               uses: actions/upload-artifact@v4
               with:
                   name: .net-app
-                  path: ${{env.DOTNET_ROOT}}/myapp
+                  path: myapp
 
     deploy:
         permissions:
